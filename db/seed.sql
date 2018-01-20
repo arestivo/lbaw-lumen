@@ -19,7 +19,7 @@ INSERT INTO users VALUES (DEFAULT, 'arestivo');
 
 INSERT INTO list VALUES (DEFAULT, 'Things to do');
 INSERT INTO item VALUES (DEFAULT, 1, 'Buy milk');
-INSERT INTO item VALUES (DEFAULT, 1, 'Walk the dog');
+INSERT INTO item VALUES (DEFAULT, 1, 'Walk the dog', true);
 
 INSERT INTO list VALUES (DEFAULT, 'Things not to do');
 INSERT INTO item VALUES (DEFAULT, 2, 'Break a leg');

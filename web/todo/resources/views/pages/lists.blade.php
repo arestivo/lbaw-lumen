@@ -7,17 +7,10 @@
 @foreach ($lists as $list)
   <article class="list">
   <header>
-    <h2>{{ $list->name }}</h2>
+    <h2><a href="list/{{ $list->id }}">{{ $list->name }}</a></h2>
   </header>
   <ul>
-  @foreach ($list->items as $item)
-    <li>
-      <label>
-        <input type="checkbox">
-        {{ $item->description }}
-      </label>
-    </li>
-  @endforeach
+    @each('partials.item', $list->items, 'item')
   </ul>
   </article>
   @endforeach

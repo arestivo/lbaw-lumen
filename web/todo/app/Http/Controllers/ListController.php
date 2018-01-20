@@ -16,7 +16,7 @@ class ListController extends Controller
     {
       $list = app('db')->select("SELECT * FROM list WHERE id = :id", ['id' => $id])[0];
       $items = app('db')->select("SELECT * FROM item WHERE list_id = :id", ['id' => $id]);
-      return view('list', ['list' => $list, 'items' => $items]);
+      return view('pages.list', ['list' => $list, 'items' => $items]);
     }
 
     /**
@@ -31,6 +31,6 @@ class ListController extends Controller
         $items = app('db')->select("SELECT * FROM item WHERE list_id = :id", ['id' => $list->id]);
         $lists[$key]->items = $items;
       }
-      return view('lists', ['lists' => $lists]);
+      return view('pages.lists', ['lists' => $lists]);
     }
 }

@@ -15,7 +15,5 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->get('user/{id}', 'UserController@show');
-
 $router->get('list', 'ListController@list');
 $router->get('list/{id}', 'ListController@show');

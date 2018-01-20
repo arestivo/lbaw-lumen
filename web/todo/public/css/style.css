@@ -1,8 +1,12 @@
 main > header {
-  color: white;
   background-color: #837EB1;
   padding: 1em;
   margin: 1em;
+}
+
+main > header a {
+  color: white;
+  text-decoration: none;
 }
 
 #content {
@@ -14,4 +18,8 @@ article.list {
   background-color: #FFFAAA;
   padding: 1em;
   margin: 1em;
+}
+
+article.list header a {
+  color: black;
 }
