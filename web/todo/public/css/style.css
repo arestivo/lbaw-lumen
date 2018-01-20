@@ -1,0 +1,17 @@
+main > header {
+  color: white;
+  background-color: #837EB1;
+  padding: 1em;
+  margin: 1em;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+article.list {
+  background-color: #FFFAAA;
+  padding: 1em;
+  margin: 1em;
+}
